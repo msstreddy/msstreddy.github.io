@@ -347,11 +347,11 @@ hr {
   .tile.tile-32 .tile-inner {
     color: #f9f6f2;
     background-size: 15px;
-    background-image: url("js.jpeg");  }
+    background-image: url("js.jpg");  }
   .tile.tile-64 .tile-inner {
     color: #f9f6f2;
     background-size: 15px;
-    background-image: url("python.jpeg");  }
+    background-image: url("python.jpg");  }
   .tile.tile-128 .tile-inner {
     color: #f9f6f2;
     background: #edcf72;
