@@ -1,9 +1,19 @@
 .hypertext a{
     text-decoration: none;
     margin-left:30px;
+    
+}
+.hypertext{
+    padding-top: 5px;
 }
 body{
-    background-image: url(../images/background.jpg);
+    background-color: blueviolet;
+}
+nav{
+    background-color: black;
+    border-radius: 5px;
+    text-color:white;
+    height:25px;
 }
 .body_part{
    float:left;
@@ -13,14 +23,13 @@ body{
 }
 .icon_pic{
     float: right;
-
-    
 }
 .body_part side_heading{
     font-family: sans-serif Helvetica ;
 }
 .para{
   font-size: 20px;
+  text-indent: 25px;
   
 }
 .footer{
