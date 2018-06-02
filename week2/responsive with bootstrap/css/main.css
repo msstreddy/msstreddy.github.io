@@ -1,0 +1,39 @@
+body{
+    background-color: #6ac5ac;
+}
+
+.course{
+    width:97%;
+    height:37%;
+    margin: 15px;
+    border-radius: 7px;
+    background-color: white;
+    padding-top: 10px;
+}
+
+img{
+    margin-top:20px;
+    max-width:90px;
+    max-height: 80px;
+}
+
+h4{
+    margin-top:25px;
+    font-family: sans-serif;
+ }
+
+h5{
+    margin-top: 10px;
+    font-family: sans-serif;
+    line-height: 20px;
+    text-align: center
+}
+
+@media screen and (max-width:730px){
+    .course-summary{
+        display:none;
+    }
+    .course{
+        height:27%;
+    }
+}
