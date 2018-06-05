@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/series-label.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/export-data.js"></script>
+    
+    
+</head>
+<body>
+    <h1 class="text-center">Weather Info</h1>
+    <div class="container">
+    <div class="input-group">
+        <span class="input-group-addon">@</span>
+        <input type="text" id="cityName" class="form-control" placeholder="Search city...">
+    </div>
+    <button class="btn btn-primary" id="weather">Get weather</button>
+    <button class="btn btn-primary" id="forecast">Get forecast</button>
+    <table class="table table-stripped content-hide">
+        <thead>
+            <tr>
+                <th>Temperature</th>
+                <th>Humidity</th>
+                <th>pressure</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td id="temperature"></td>
+                <td id="humidity"></td>
+                <td id="pressure"></td>
+            </tr>
+        
+        </tbody>
+    </table>
+    <div id="chart-container" class="results-hide">
+
+    </div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>
