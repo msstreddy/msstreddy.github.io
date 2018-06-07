@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+</head>
+<body>
+    <h3>EMPLOYEE ID CARD FORM</h3>
+    <div class="form-container">
+    
+    <form>
+            <div class="form-group row">
+              <label for="firstName" class="col-sm-2 col-form-label">First Name</label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" id="firstName">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="fullName" class="col-sm-2 col-form-label">Full Name</label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" id="fullName">
+              </div>
+            </div>
+            <div class="form-group row">
+                    <label for="designation" class="col-sm-2 col-form-label">Designation</label>
+                    <div class="col-sm-10">
+                      <input type="text" class="form-control" id="designation">
+                    </div>
+            </div>
+            <div class="form-group row">
+                    <label for="employee_code" class="col-sm-2 col-form-label">Employee code</label>
+                    <div class="col-sm-10">
+                      <input type="text" class="form-control" id="employee_code">
+                    </div>
+            </div>
+            <div class="form-group row">
+                    <label for="blood_grp" class="col-sm-2 col-form-label">Blood Group</label>
+                    <div class="col-sm-10">
+                      <select type="text" class="form-control" id="blood_grp">
+                            <option value="" selected disabled hidden>Choose here</option>
+                            <option value="O+">A(+ve)</option>
+                            <option value="O-">A(-ve)</option>
+                            <option value="O+">B(+ve)</option>
+                          <option value="O-">B(-ve)</option>
+                          <option value="O+">AB(+ve)</option>
+                          <option value="O-">AB(-ve)</option>
+                          <option value="O+">O(+ve)</option>
+                          <option value="O-">O(-ve)</option>
+                      </select>
+                    </div>
+            </div>
+            <div class="form-group row">
+                    <label for="reason" class="col-sm-2 col-form-label">Reason</label>
+                    <div class="col-sm-10">
+                            <select type="text" class="form-control" id="reason">
+                                    <option value="" selected disabled hidden>Choose here</option>
+                                    <option value="New employee">New Employee</option>
+                                    <option value="Lost">Lost</option>
+                                    <option value="Defaced">Defaced</option>
+                                    <option value="Conversion">Conversion</option>
+                                    <option value="Designation Change">Designation change</option>
+                                    
+
+                                </select>
+                    </div>
+            </div>
+            <div class="form-group row">
+                    <label for="email" class="col-sm-2 col-form-label">Email</label>
+                    <div class="col-sm-10">
+                      <input type="text" class="form-control" id="email">
+                    </div>
+            </div>
+            <div class="form-group row">
+                    <label for="date_of_emp" class="col-sm-2 col-form-label">Date of Employment</label>
+                    <div class="col-sm-10">
+                      <input type="date" class="form-control" id="date_of_emp">
+                    </div>
+            </div>
+            <div class="form-group row">
+                    <label for="mobile_num" class="col-sm-2 col-form-label">Mobile No.</label>
+                    <div class="col-sm-10">
+                      <input type="text" class="form-control" id="mobile_num">
+                    </div>
+            </div>
+            <div class="form-group row">
+                    <label for="emg_cnct" class="col-sm-2 col-form-label">Emergency Contact</label>
+                    <div class="col-sm-10">
+                      <input type="text" class="form-control" id="emg_cnct">
+                    </div>
+            </div>
+            
+            <div class="form-group row">
+              <div class="col-sm-10">
+                    <input type="button" class="btn btn-primary" id="submit" value="submit" onclick="validate()">
+              </div>
+            </div>
+          </form>
+        </div>
+    <script src="js/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    
+</body>
+</html>

@@ -1,4 +1,24 @@
+document.getElementById('cityName').onkeypress=function(){
+    var key=event.which;
+    if(key>=65 && key<=90 ||key>=97 && key<=122)
+    {
+        $('#weather').prop("disabled", false);
+        $('#forecast').prop("disabled", false);
+        return true;
+    }
+    else
+        return false;
+}
+document.getElementById('cityName').onkeyup=function(){
+    if(document.getElementById('cityName').value=="")
+    {
+         $('#weather').prop("disabled", true);
+         $('#forecast').prop("disabled", true);
+         console.log("cityname null");
+    }
+}
 $("#weather").click(function(){
+
     const cityName=$('#cityName').val();
     $('#chart-container').addClass('content-hide');
     
@@ -74,7 +94,7 @@ $('#forecast').click(() => {
                 spline: {
                     marker: {
                         radius: 4,
-                        lineColor: '#666666',
+                        lineColor: '#FFFFFF',
                         lineWidth: 1
                     }
                 }
