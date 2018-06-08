@@ -24,7 +24,7 @@ export class Scorer {
     
             for(var i=0;i<this.listOfBatsman.length;i++)
             {
-                if(this.listOfBatsman[i]==Data.batsmanName && )
+                if(this.listOfBatsman[i]==Data.batsmanName)
                    playerOnStrike = this.listOfBatsman[i];
             }
             if (Data.runsScored % 2 === 1) {
