@@ -1,16 +1,16 @@
 function validate(){
     console.log('inside validate');
-    var firstName=$("#firstName").val();
-    var fullName=$("#fullName").val();
-    var designation=$("#designation").val();
-    var employee_code=$("#employee_code").val();
-    var blood_grp=$("#blood_grp").val();
-    var reason=$("#reason").val();
-    var email=$("#email").val();
-    var date_of_emp=$("#date_of_emp").val();
-    var mobile_num=$("#mobile_num").val();
-    var emg_cnct=$("#emg_cnct").val();
-    var flag=true;
+     firstName=$("#firstName").val();
+     fullName=$("#fullName").val();
+     designation=$("#designation").val();
+     employee_code=$("#employee_code").val();
+     blood_grp=$("#blood_grp").val();
+     reason=$("#reason").val();
+     email=$("#email").val();
+     date_of_emp=$("#date_of_emp").val();
+     mobile_num=$("#mobile_num").val();
+     emg_cnct=$("#emg_cnct").val();
+     flag=true;
     $("input").removeClass("border_style");
     $("select").removeClass("border_style");
     if(!verify_text(firstName))
@@ -28,7 +28,7 @@ function validate(){
         flag=false;
         $('#designation').addClass("border_style");
     }
-    if(!(/^\d{10}$/.test(employee_code)))
+    if(!(/^\d{7}$/.test(employee_code)))
     {
         flag=false;
         $('#employee_code').addClass("border_style");
@@ -63,6 +63,8 @@ function validate(){
         flag=false;
         $('#date_of_emp').addClass("border_style");
     }
+    if(flag)
+        send_post();
 
     
 }
@@ -76,12 +78,19 @@ function verify_text(data)
 }
 function send_post()
 {
-    var FirstName=$("#firstName").val();
-    var FullName=$("#fullName").val();
+     
     console.log("inside post");
     const data={
-        firstName:FirstName,
-        lastName:FullName
+        firstName:firstName,
+        fullName:fullName,
+        designation:designation,
+        employee_code:employee_code,
+        blood_grp:blood_grp,
+        reason:reason,
+        email:email,
+        date_of_emp:date_of_emp,
+        mobile_num:mobile_num,
+        emg_cnct:emg_cnct
     }
     $.ajax({
         type: 'POST',
@@ -89,6 +98,9 @@ function send_post()
         data:JSON.stringify(data),
         success : function(data){
          console.log('inside success');
+         alert("Form submitted!!!!!");
+         $("input").val().change()="";
+         $("se").val().change()="";
         },
         error :function(err){
         }
