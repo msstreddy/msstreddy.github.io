@@ -12,6 +12,10 @@ h3{
 .border_style{
     border: 1px solid red !important;
 }
+.error{
+    color: red;
+}
+
 .form-group{
     margin-bottom: 0.7rem !important;
 }

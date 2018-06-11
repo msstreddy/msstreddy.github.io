@@ -1,3 +1,4 @@
+$('.error').hide();
 function validate(){
     console.log('inside validate');
      firstName=$("#firstName").val();
@@ -13,55 +14,67 @@ function validate(){
      flag=true;
     $("input").removeClass("border_style");
     $("select").removeClass("border_style");
+    $(".error").hide();
     if(!verify_text(firstName))
     {
         flag=false;
         $("#firstName").addClass("border_style");
+        $("#firstName_error").show();
+
     }
     if(!verify_text(fullName))
     {
         flag=false;
         $('#fullName').addClass("border_style");
+        $("#fullName_error").show();
     }
     if(!verify_text(designation))
     {
         flag=false;
         $('#designation').addClass("border_style");
+        $("#designation_error").show();
     }
     if(!(/^\d{7}$/.test(employee_code)))
     {
         flag=false;
         $('#employee_code').addClass("border_style");
+        $("#employee_code_error").show();
     }
     if(blood_grp==null)
     {
         flag=false;
         $('#blood_grp').addClass("border_style");
+        $("#blood_grp_error").show();
     }
     if(reason==null)
     {
         flag=false;
         $('#reason').addClass("border_style");
+        $("#reason_error").show();
     }
     if(!(/^\d{10}$/.test(mobile_num)))
     {
         flag=false;
         $('#mobile_num').addClass("border_style");
+        $("#mobile_num_error").show();
     }
     if(!(/^\d{10}$/.test(emg_cnct)))
     {
         flag=false;
         $('#emg_cnct').addClass("border_style");
+        $("#emg_cnct_error").show();
     }
     if(!(/^[a-zA-Z][a-zA-Z0-9]{5,}@virtusa.com$/.test(email)))
     {
         flag=false;
         $('#email').addClass("border_style");
+        $("#email_error").show();
     }
     if(date_of_emp=="")
     {
         flag=false;
         $('#date_of_emp').addClass("border_style");
+        $("#date_of_emp_error").show();
     }
     if(flag)
         send_post();

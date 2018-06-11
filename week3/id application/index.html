@@ -18,24 +18,28 @@
               <label for="firstName" class="col-sm-2 col-form-label">First Name</label>
               <div class="col-sm-10">
                 <input type="text" class="form-control" id="firstName">
+                <span class="error" id="firstName_error">Name should not contain numericals</span>
               </div>
             </div>
             <div class="form-group row">
               <label for="fullName" class="col-sm-2 col-form-label">Full Name</label>
               <div class="col-sm-10">
                 <input type="text" class="form-control" id="fullName">
+                <span class="error" id="fullName_error">Name should not contain numericals</span>
               </div>
             </div>
             <div class="form-group row">
                     <label for="designation" class="col-sm-2 col-form-label">Designation</label>
                     <div class="col-sm-10">
                       <input type="text" class="form-control" id="designation">
+                      <span class="error" id="designation_error">designation should not contain numericals</span>
                     </div>
             </div>
             <div class="form-group row">
                     <label for="employee_code" class="col-sm-2 col-form-label">Employee code</label>
                     <div class="col-sm-10">
                       <input type="text" class="form-control" id="employee_code">
+                      <span class="error" id="empCode_error">employee code should contain only numericals length 7</span>
                     </div>
             </div>
             <div class="form-group row">
@@ -52,6 +56,7 @@
                           <option value="O+">O(+ve)</option>
                           <option value="O-">O(-ve)</option>
                       </select>
+                      <span class="error" id="blood_grp_error">Select blood Group</span>
                     </div>
             </div>
             <div class="form-group row">
@@ -64,33 +69,36 @@
                                     <option value="Defaced">Defaced</option>
                                     <option value="Conversion">Conversion</option>
                                     <option value="Designation Change">Designation change</option>
-                                    
-
                                 </select>
+                                <span class="error" id="reason_error">Select reason</span>
                     </div>
             </div>
             <div class="form-group row">
                     <label for="email" class="col-sm-2 col-form-label">Email</label>
                     <div class="col-sm-10">
                       <input type="text" class="form-control" id="email">
+                      <span class="error" id="email_error">Email format should be <b>example@virtusa.com</b></span>
                     </div>
             </div>
             <div class="form-group row">
                     <label for="date_of_emp" class="col-sm-2 col-form-label">Date of Employment</label>
                     <div class="col-sm-10">
                       <input type="date" class="form-control" id="date_of_emp">
+                      <span class="error" id="date_of_emp_error">Set appropriate date</span>
                     </div>
             </div>
             <div class="form-group row">
                     <label for="mobile_num" class="col-sm-2 col-form-label">Mobile No.</label>
                     <div class="col-sm-10">
                       <input type="text" class="form-control" id="mobile_num">
+                      <span class="error" id="mobile_num_error">Phone Number should have 10 numbers</span>
                     </div>
             </div>
             <div class="form-group row">
                     <label for="emg_cnct" class="col-sm-2 col-form-label">Emergency Contact</label>
                     <div class="col-sm-10">
                       <input type="text" class="form-control" id="emg_cnct">
+                      <span class="error" id="emg_cnct_error">Contact should have 10 numbers</span>
                     </div>
             </div>
             
@@ -101,9 +109,7 @@
             </div>
           </form>
         </div>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="js/main.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-        crossorigin="anonymous"></script>
-    
 </body>
 </html>
