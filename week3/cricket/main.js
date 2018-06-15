@@ -1,5 +1,5 @@
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
+exports.__esModule = true;
 var batsman_1 = require("./batsman");
 var scorer_1 = require("./scorer");
 var scorer = new scorer_1.Scorer();

@@ -1,0 +1,23 @@
+{
+  "name": "msstreddy.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "test.js",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "lite-server": "^2.3.0",
+    "typescript": "^2.9.1"
+  },
+  "devDependencies": {},
+  "scripts": { "dev": "lite-server" },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/msstreddy/msstreddy.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/msstreddy/msstreddy.github.io/issues"
+  },
+  "homepage": "https://github.com/msstreddy/msstreddy.github.io#readme"
+}

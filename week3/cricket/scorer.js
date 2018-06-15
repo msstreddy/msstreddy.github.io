@@ -1,5 +1,5 @@
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
+exports.__esModule = true;
 var Scorer = /** @class */ (function () {
     function Scorer() {
         this.totalScore = 0;
@@ -23,16 +23,11 @@ var Scorer = /** @class */ (function () {
         var playerOnStrike = this.listOfBatsman[0];
         arr.forEach(function (runScored, ballNumber) {
             if (runScored % 2 === 1) {
-                if (playerOnStrike) {
-                    console.log(playerOnStrike);
-                    playerOnStrike.addRuns(runScored);
-                    playerOnStrike = _this.changeStrike(playerOnStrike);
-                }
+                playerOnStrike.addRuns(runScored);
+                playerOnStrike = _this.changeStrike(playerOnStrike);
             }
             else {
-                if (playerOnStrike) {
-                    playerOnStrike.addRuns(runScored);
-                }
+                playerOnStrike.addRuns(runScored);
             }
             _this.totalScore += runScored;
             if ((ballNumber + 1) % 6 === 0) {
