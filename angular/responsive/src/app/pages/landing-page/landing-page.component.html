@@ -1,3 +1,5 @@
 
   <app-header [text]="headerText"></app-header>
-  <app-tiles *ngFor="let tileObj of skillInformation" [tile]="tileObj"></app-tiles>
+  <div class="container">
+      <app-tiles *ngFor="let tileObj of skillInformation" [tile]="tileObj"></app-tiles>
+</div> 

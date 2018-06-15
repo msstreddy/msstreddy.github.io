@@ -10,62 +10,62 @@ export class LandingPageComponent implements OnInit {
   skillInformation: Array<Tiles> = [
     {
       name: 'HTML',
-      description: 'aaaa',
+      description: 'I will write semantic markup in HTML5 which is the latest standard of core technology of web.',
       imgURL: 'assets/images/html.png'
     },
     {
       name: 'CSS',
-      description: 'aaaa',
+      description: 'I will write semantic markup in HTML5 which is the latest standard of core technology of web.',
       imgURL: 'assets/images/html.png'
     },
     {
       name: 'JS',
-      description: 'aaaa',
+      description: 'I will write semantic markup in HTML5 which is the latest standard of core technology of web.',
       imgURL: 'assets/images/html.png'
     },
     {
       name: 'React',
-      description: 'aaaa',
+      description: 'I will write semantic markup in HTML5 which is the latest standard of core technology of web.',
       imgURL: 'assets/images/html.png'
     },
     {
       name: 'Angular',
-      description: 'aaaa',
+      description: 'I will write semantic markup in HTML5 which is the latest standard of core technology of web.',
       imgURL: 'assets/images/html.png'
     },
     {
       name: 'Webpack',
-      description: 'aaaa',
+      description: 'I will write semantic markup in HTML5 which is the latest standard of core technology of web.',
       imgURL: 'assets/images/html.png'
     },
     {
       name: 'HTML',
-      description: 'aaaa',
+      description: 'I will write semantic markup in HTML5 which is the latest standard of core technology of web.',
       imgURL: 'assets/images/html.png'
     },
     {
       name: 'CSS',
-      description: 'aaaa',
+      description: 'I will write semantic markup in HTML5 which is the latest standard of core technology of web.',
       imgURL: 'assets/images/html.png'
     },
     {
       name: 'JS',
-      description: 'aaaa',
+      description: 'I will write semantic markup in HTML5 which is the latest standard of core technology of web.',
       imgURL: 'assets/images/html.png'
     },
     {
       name: 'React',
-      description: 'aaaa',
+      description: 'I will write semantic markup in HTML5 which is the latest standard of core technology of web.',
       imgURL: 'assets/images/html.png'
     },
     {
       name: 'Angular',
-      description: 'aaaa',
+      description: 'I will write semantic markup in HTML5 which is the latest standard of core technology of web.',
       imgURL: 'assets/images/html.png'
     },
     {
       name: 'Webpack',
-      description: 'aaaa',
+      description: 'I will write semantic markup in HTML5 which is the latest standard of core technology of web.',
       imgURL: 'assets/images/html.png'
     }
   ];
