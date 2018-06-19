@@ -1,0 +1,17 @@
+.body_part{
+    float: left;
+    width:100%;
+    margin: auto;
+    text-align: center;
+ }
+ .icon_pic{
+     float: right;
+ }
+ .body_part side_heading{
+     font-family: sans-serif Helvetica ;
+ }
+ .para{
+   font-size: 20px;
+   text-indent: 25px;
+   margin: 10px;
+ }

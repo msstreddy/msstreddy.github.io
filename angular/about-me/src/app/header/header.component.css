@@ -1,0 +1,18 @@
+nav{
+    background-color: black;
+    border-radius: 5px;
+    color:white;
+    height:25px;
+    padding:10px;
+}
+.hypertext a{
+    text-decoration: none;
+    margin-left:30px;
+    
+}
+.hypertext{
+    padding-top: 5px;
+}
+.head{
+    text-align: center;
+}

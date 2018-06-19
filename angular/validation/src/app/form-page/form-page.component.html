@@ -1,0 +1,99 @@
+<h3>EMPLOYEE ID CARD FORM</h3>
+<div class="form-container">
+
+<form novalidate [formGroup]='idGroup' >
+        <div class="form-group row">
+          <label for="firstName" class="col-sm-2 col-form-label">First Name</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" formControlName="firstName">
+            <span class="error" id="firstName_err" *ngIf="idGroup.get('firstName').errors && idGroup.get('firstName').touched">Name should not contain numericals</span>
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="fullName" class="col-sm-2 col-form-label">Full Name</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control"  formControlName="fullName">
+            <span class="error" *ngIf="idGroup.get('fullName').errors && idGroup.get('fullName').touched">Name should not contain numericals</span>
+          </div>
+        </div>
+        <div class="form-group row">
+                <label for="designation" class="col-sm-2 col-form-label">Designation</label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" formControlName="designation">
+                  <span class="error" *ngIf="idGroup.get('designation').errors && idGroup.get('designation').touched">designation should not contain numericals</span>
+                </div>
+        </div>
+        <div class="form-group row">
+                <label for="employee_code" class="col-sm-2 col-form-label">Employee code</label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" formControlName="employee_code">
+                  <span class="error" *ngIf="idGroup.get('employee_code').errors && idGroup.get('employee_code').touched">employee code should contain only numericals length 7</span>
+                </div>
+        </div>
+        <div class="form-group row">
+                <label for="blood_grp" class="col-sm-2 col-form-label">Blood Group</label>
+                <div class="col-sm-10">
+                  <select type="text" class="form-control" formControlName="blood_grp">
+                        <option value="" selected disabled hidden>Choose here</option>
+                        <option value="A+">A(+ve)</option>
+                        <option value="A-">A(-ve)</option>
+                        <option value="B+">B(+ve)</option>
+                      <option value="B-">B(-ve)</option>
+                      <option value="AB+">AB(+ve)</option>
+                      <option value="AB-">AB(-ve)</option>
+                      <option value="O+">O(+ve)</option>
+                      <option value="O-">O(-ve)</option>
+                  </select>
+                  <span class="error" *ngIf="idGroup.get('blood_grp').errors && idGroup.get('blood_grp').touched">Select blood Group</span>
+                </div>
+        </div>
+        <div class="form-group row">
+                <label for="reason" class="col-sm-2 col-form-label">Reason</label>
+                <div class="col-sm-10">
+                        <select type="text" class="form-control" formControlName="reason">
+                                <option value="" selected disabled hidden>Choose here</option>
+                                <option value="New employee">New Employee</option>
+                                <option value="Lost">Lost</option>
+                                <option value="Defaced">Defaced</option>
+                                <option value="Conversion">Conversion</option>
+                                <option value="Designation Change">Designation change</option>
+                            </select>
+                            <span class="error" *ngIf="idGroup.get('reason').errors && idGroup.get('reason').touched">Select reason</span>
+                </div>
+        </div>
+        <div class="form-group row">
+                <label for="email" class="col-sm-2 col-form-label">Email</label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" formControlName="email">
+                  <span class="error" *ngIf="idGroup.get('email').errors && idGroup.get('email').touched">Email format should be <b>example@virtusa.com</b></span>
+                </div>
+        </div>
+        <div class="form-group row">
+                <label for="date_of_emp" class="col-sm-2 col-form-label">Date of Employment</label>
+                <div class="col-sm-10">
+                  <input type="date" class="form-control" formControlName="date_of_emp">
+                  <span class="error" *ngIf="idGroup.get('date_of_emp').errors && idGroup.get('date_of_emp').touched">Set appropriate date</span>
+                </div>
+        </div>
+        <div class="form-group row">
+                <label for="mobile_num" class="col-sm-2 col-form-label">Mobile No.</label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" formControlName="mobile_num">
+                  <span class="error" *ngIf="idGroup.get('mobile_num').errors && idGroup.get('mobile_num').touched">Phone Number should have 10 numbers</span>
+                </div>
+        </div>
+        <div class="form-group row">
+                <label for="emg_cnct" class="col-sm-2 col-form-label">Emergency Contact</label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" formControlName="emg_cnct">
+                  <span class="error" *ngIf="idGroup.get('emg_cnct').errors && idGroup.get('emg_cnct').touched">Contact should have 10 numbers</span>
+                </div>
+        </div>
+        
+        <div class="form-group row">
+          <div class="col-sm-10">
+                <input type="button" class="btn btn-primary" [disabled]="idGroup.invalid" value="submit" (click)="onSubmit()">
+          </div>
+        </div>
+      </form>
+    </div>
