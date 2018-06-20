@@ -19,7 +19,7 @@ export class FormPageComponent implements OnInit {
       reason:new FormControl('',Validators.required),
       email:new FormControl(null,[Validators.required,Validators.pattern(/^[a-zA-Z][a-zA-Z0-9]{3,}@virtusa.com$/)]),
       date_of_emp:new FormControl(null,Validators.required),
-      mobile_num:new FormControl(null,[Validators.required,Validators.pattern(/^\d{10}$/)]),
+      mobile_num:new FormControl(null,[Validators.required,Validators.pattern(/^[1-9]\d{9}$/)]),
       emg_cnct:new FormControl(null,[Validators.required,Validators.pattern(/^\d{10}$/)])
     });
    }

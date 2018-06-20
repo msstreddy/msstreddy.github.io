@@ -1,6 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
 import { AppComponent } from './app.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { SummaryComponent } from './landing-page/summary/summary.component';
@@ -21,6 +20,7 @@ import { SearchComponent } from './landing-page/search/search.component';
     ChartComponent,
     DayTileComponent,
     SearchComponent,
+    
   
   ],
   imports: [

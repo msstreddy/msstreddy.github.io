@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import {WeatherService} from '../weather.service';
 
 @Component({
   selector: 'app-landing-page',
@@ -7,7 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LandingPageComponent implements OnInit {
 
-  constructor() { }
+  
+  constructor(private Weather:WeatherService) {
+      
+   }
 
   ngOnInit() {
   }

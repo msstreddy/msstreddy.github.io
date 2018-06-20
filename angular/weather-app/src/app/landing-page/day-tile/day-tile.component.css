@@ -1,0 +1,13 @@
+
+.day_block{
+    width:120px;
+    height: 100%;
+    text-align: center
+}
+ul 
+{
+    list-style-type: none;
+    padding: 0px;
+    font-size: 19px;
+}
+
