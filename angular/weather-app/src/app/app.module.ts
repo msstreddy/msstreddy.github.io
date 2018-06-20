@@ -8,7 +8,7 @@ import { PhwComponent } from './landing-page/phw/phw.component';
 import { ChartComponent } from './landing-page/chart/chart.component';
 import { DayTileComponent } from './landing-page/day-tile/day-tile.component';
 import { SearchComponent } from './landing-page/search/search.component';
-
+import {HttpModule, Http} from '@angular/http';
 
 @NgModule({
   declarations: [
@@ -20,11 +20,12 @@ import { SearchComponent } from './landing-page/search/search.component';
     ChartComponent,
     DayTileComponent,
     SearchComponent,
-    
+
   
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpModule
   ],
   providers: [],
   bootstrap: [AppComponent]

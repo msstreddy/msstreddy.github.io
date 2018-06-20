@@ -1,11 +1,15 @@
 import { Injectable } from '@angular/core';
 import {Itile} from './models/Itile';
+import {Http} from '@angular/http';
+import { Isummary } from './models/Isummary';
+import * as moment from 'moment';
 @Injectable({
   providedIn: 'root'
 })
 export class WeatherService {
-  dayTileList: Array<Itile>
-  constructor() {
+  dayTileList: Array<Itile>;
+  summary: Isummary;
+  constructor(private httpService:Http) {
     this.dayTileList=[
     {
       day: "wed",
@@ -42,6 +46,20 @@ export class WeatherService {
       minTemp: 20,
       maxTemp: 30
     }
-  ]}
-   
+  ]
+  }
+  fetchWeatherInfo(cityName: string) {
+    const url = `http://api.openweathermap.org/data/2.5/forecast?q=${cityName}&appid=27d43832d2a4adcb97fcbfa23db130aa`;
+    this.httpService.get(url)
+      .subscribe((rsp) => {
+        console.log(rsp.json());
+        const data = rsp.json();
+        this.summary = {
+          cityName: data.city.name,
+          day: moment(data.list[0].dt * 1000).format("dddd"),
+          weatherCondition: data.list[0].weather[0].description
+        }
+    })
+  }
 }
+  

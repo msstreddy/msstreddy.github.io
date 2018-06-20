@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import {WeatherService} from '../weather.service';
+import { Isummary } from '../models/Isummary';
 
 @Component({
   selector: 'app-landing-page',
@@ -9,8 +10,8 @@ import {WeatherService} from '../weather.service';
 export class LandingPageComponent implements OnInit {
 
   
-  constructor(private Weather:WeatherService) {
-      
+  constructor(private weather:WeatherService) {
+    
    }
 
   ngOnInit() {

@@ -1,8 +1,7 @@
 <div class="summary">
-  <ul>
-          <li> Hyderabad, Telangana </li>
-          <li>Tuesday, 3:00 PM</li>
-          <li>Partly Cloudy</li>
+  <ul *ngIf="summaryInfo">
+          <li> {{summaryInfo.cityName}} </li>
+          <li>{{summaryInfo.day}}</li>
+          <li>{{summaryInfo.weatherCondition}}</li>
   </ul>
-  
 </div>
