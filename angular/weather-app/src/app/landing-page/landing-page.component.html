@@ -1,10 +1,10 @@
 <app-search></app-search>
 <div class="container">
-    <app-summary [summaryInfo]="weather.summary"></app-summary>
-    <app-temperature></app-temperature>
-    <app-phw></app-phw>
+    <app-summary *ngIf="weatherService.summary" [summaryInfo]="weatherService.summary"></app-summary>
+    <app-temperature *ngIf="weatherService.temperatureInfo" [tempInfo]="weatherService.temperatureInfo"></app-temperature>
+    <app-phw *ngIf="weatherService.phw" [phwInfo]="weatherService.phw"></app-phw>
     <app-chart></app-chart>
     <div class="days_selection">
-    <app-day-tile *ngFor="let dayTile of Weather.dayTileList" [tileInfo]="dayTile"></app-day-tile>
+    <app-day-tile *ngFor="let dayTile of weatherService.dayTileList" [tileInfo]="dayTile"></app-day-tile>
     </div>
 </div>

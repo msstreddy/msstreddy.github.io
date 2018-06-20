@@ -9,8 +9,7 @@ import { Isummary } from '../models/Isummary';
 })
 export class LandingPageComponent implements OnInit {
 
-  
-  constructor(private weather:WeatherService) {
+  constructor(private weatherService:WeatherService) {
     
    }
 

@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { Iphw } from '../../models/Iphw';
 
 @Component({
   selector: 'app-phw',
@@ -6,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./phw.component.css']
 })
 export class PhwComponent implements OnInit {
-
+   @Input() phwInfo:Iphw;
   constructor() { }
 
   ngOnInit() {
